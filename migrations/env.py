@@ -4,8 +4,7 @@ from logging.config import fileConfig
 from flask import current_app
 
 from alembic import context
-
-from models import db
+from models import db, Hero, Power, HeroPower  # Ensure models are imported
 target_metadata = db.metadata
 
 
